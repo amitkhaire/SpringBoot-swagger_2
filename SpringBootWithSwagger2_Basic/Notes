@@ -1,0 +1,39 @@
+Step to use the swagger configuration
+
+1.create the endpints using the rest sevice
+2.add the dependency for swagger 2 
+ eg.
+ <!-- https://mvnrepository.com/artifact/io.springfox/springfox-swagger2 -->
+<dependency>
+    <groupId>io.springfox</groupId>
+    <artifactId>springfox-swagger2</artifactId>
+    <version>2.9.2</version>
+</dependency>
+ 
+ 3) Enabling the swagger using the annotations
+ eg.@EnableSwagger2 -- use this annotation in main method
+ 
+ 4) varify the swagger working 
+http://localhost:8080/v2/api-docs
+
+5)Generate the Html documents addd the dependency
+eg.
+<!-- https://mvnrepository.com/artifact/io.springfox/springfox-swagger-ui -->
+<dependency>
+    <groupId>io.springfox</groupId>
+    <artifactId>springfox-swagger-ui</artifactId>
+    <version>2.9.2</version>
+</dependency>
+
+6) Add the root api
+@RequestMapping("/api")
+
+7)after adding the above just check
+http://localhost:8080/swagger-ui.htm
+
+tryed out all the above urls
+=================================================================================================
+CUtomise configuration find in main method
+all are the cusomise swagger
+check in model object
+check in controller also
